@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=0.5">
+    <title>Document</title>
+    <link href="style.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div id="navbar">
+        <span id="logo"><a href="index.html">NIKE</a></span>
+        <div id="rightnav">
+            <a href="Newreleases">NEW RELEASES</a>
+            <a href="MEN">MEN</a>
+            <a href="WOMEN">WOMEN</a>
+            <a href="KIDS">KIDS</a>
+            <a href="COLLECTIONS">COLLECTIONS</a>
+            <i class="fa-brands fa-shopify" ></i>
+        </div>  
+        <div class="topnav">
+            <div id="myLinks">
+              <a href="#Men">Men</a>
+              <a href="#Women">Women</a>
+              <a href="#about">Collection</a>
+            </div>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+              <i class="fa fa-bars"></i>
+            </a>
+          </div>
+    </div>
+    <div id="hero">
+        <div id="hero-left">
+            <div id="hero-left-1">
+                <div id="hero-left-top">
+                    <h1 style="margin: 0;">NIKE</h1>
+                    <h3 style="position: relative; top: -15px;font-weight: 100;margin: 0;">AIRMAX 370</h3>
+                </div>
+                <div id="star"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+            </div>
+            <p >Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempora eum placeat recusandae similique aliquid repudiandae itaque rerum et eveniet molestiae. Aspernatur a eos distinctio possimus accusantium, odio vel facilis quae!</p>
+            <div id="size-text"><a>Size : </a>
+            <select name="cars" id="size">
+                <option value="volvo" >8</option>
+                <option value="saab" >9</option>
+                <option value="mercedes">10</option>
+                <option value="audi">11</option>
+              </select></div>
+            <div id="add">Add To Card</div>
+        </div>
+        <div id="hero-photo"></div>
+    </div> 
+    <div id="yeezy">
+        <div id="yeezy-left">
+            <h1>YEEZY</h1>
+            <p>Keep checking back to see if the one you are waiting for is coming to your country.Availability varies by region.</p>
+            <div id="shopnow"><button>SHOP NOW <i class="fa-solid fa-arrow-right"></i></button></div>
+        </div>
+        <div id="yeezy-right"></div>
+    </div>
+    <div style="padding: 50px 150px 50px 150px;color: white;display: none;">
+        <h2>POPULAR RIGHT NOW</h2>
+        <div id="popular">
+            <div id="populartext">
+                <a class="poptext">samba</a>
+                <a class="poptext">running shoes men</a>
+                <a class="poptext">spezial</a>
+            </div >
+            <div id="populartext">
+                <a class="poptext">gazelle</a>
+                <a class="poptext">track pants</a>
+                <a class="poptext">men sandals</a>
+            </div>
+        </div>
+    </div>
+    <div id="collection">
+        <div id="collection-left">
+            <h1>VELOCITY NITRO™ 3</h1>
+            <h3 style="font-weight:200;">THE WAY RUNNING SHOULD FEEL</h3>
+            <div id="collection-button">
+                <button >SHOP NOW</button>
+                <button >SHOP NITRO COLLECTION</button>
+            </div>
+        </div>
+        <div><img src="image/Velocity-NITRO™-3-Psychedelic-Rush-Men's-Running-Shoes.avif" class="nitroimg" ></div>
+    </div>
+    <div id="footer">
+            <div>All rights reserved</div>
+            <div id="footer-icon">
+                <a href="facebook.com" style="text-decoration: none;"><i class="fa-brands fa-facebook" ></i></a>
+                <a href="instagram.com"><i class="fa-brands fa-instagram"></i></a>  
+                <a href="twitter.com"><i class="fa-brands fa-twitter"></i></a>
+            </div>
+        </div>
+        <script>
+            function myFunction() {
+              var x = document.getElementById("myLinks");
+              if (x.style.display === "block") {
+                x.style.display = "none";
+              } else {
+                x.style.display = "block";
+              }
+            }
+            </script>
+</body>
+</html>

@@ -1,0 +1,399 @@
+body{
+    margin: 0px;
+    background-color: rgb(44, 51, 84);
+    font-family: sans-serif;
+}
+
+#navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px 150px 30px 150px;
+}
+
+#logo{ 
+    color: #ff4a09;
+    text-decoration: none;
+    height: 50px;
+    /* font-size: xx-large; */
+    display: flex;
+    justify-items: center;
+    align-items: center;
+}
+
+#rightnav a{
+    color: white;
+    text-decoration: none;
+    margin: 0 20px;
+    /* font-size: 1.2rem; */
+}
+
+#rightnav a:hover{
+    color: #ff4a09;
+}
+
+#rightnav i{
+    color: white;
+    font-size: 1.7rem;
+    margin: 0 20px;
+}
+
+#hero{
+    padding: 30px 150px 30px 150px;
+    /* font-size: 50px; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#hero-left{
+    /* height: 500px; */
+    /* margin-right: 100px; */
+    display: grid;
+    justify-content: space-between;
+    height: min-content;
+    /* align-items: center; */
+}
+
+#hero-left p{
+    width: 500px;
+    /* font-size: 1.3rem; */
+    height: fit-content;
+    /* padding-top:100px; */
+    padding-bottom: 30px ;
+    color:white
+}
+
+#size-text a{
+    /* font-size: 30px; */
+    color: white;
+}
+
+#hero-left-top{
+    display: grid;
+    color: white;
+    align-items: center;
+}
+
+#star{
+    color: #ff4a09;
+    /* font-size: 1.3rem; */
+    margin: -5px 0 20px 0;
+}
+
+#size{
+    height: fit-content;
+    width: fit-content;
+    /* font-size: 20px; */
+    border-radius: 15px;
+    background-color: transparent;
+    color: white;
+    text-align: center;
+}
+
+option{
+    color: black;
+}
+
+.size-card{
+    border: 3px solid #5e6c9c;
+    padding: 5px 15px;
+    border-radius: 15px;
+}
+
+#add{
+    /* width: 50%; */
+    /* height: 6vh;  */
+    /* font-size: 1.3rem; */
+    font-weight: 700;
+    border-radius: 20px;
+    border: 3px solid #ff4a09;
+    background-color: transparent;
+    color: #ff4a09;
+    display: flex;
+    align-items: center ;
+    justify-content: center;
+    cursor: pointer;
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+
+#add:hover{
+    background-color: #ff4a09;
+    color: black;
+}
+
+#footer{
+    height: 70px;
+    /* width: 100%; */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: white;
+}
+
+#footer-icon{
+    width: 90px; 
+    display: flex; 
+    justify-content: space-between;
+    font-size: large;
+    color: inherit;
+}
+
+#hero-photo{
+    /* margin: 100px 0 100px 0; */
+    /* height: 450px; */
+    /* width: 500px; */
+    background-image: url(image/photo-1600185365926-3a2ce3cdb9eb.avif); 
+    background-size: 500px; 
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+#yeezy{
+    padding: 30px 150px 30px 150px;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #efefe3;
+    display: flex;
+    flex-direction: column;
+}
+
+#yeezy-left{
+    width: 400px;
+    text-align: justify;
+    display: grid;
+    align-content: center;
+}
+
+#yeezy-left h1{
+    /* font-size: 50px; */
+    font-weight: bolder;
+}
+
+#yeezy-right{
+    /* height: 400px;
+    width: 400px; */
+    background-image: url(image/yzy-foam-rnr-adults.png);
+    background-repeat: no-repeat;
+    background-size:contain;
+    /* margin: 100px 0 100px 0; */
+}
+
+#shopnow{
+    /* height: 50px; */
+    /* width: 150px; */
+    background-color: transparent;
+    border: 1px solid black;
+    text-align: center;
+    
+}
+
+#shopnow button:hover{
+    bottom:0px;
+    right:0px;
+}
+
+#shopnow button{
+    color: white;
+    font-weight: 700;
+    background-color: black;
+    height: 100%;width: 100%;
+    position: relative;
+    bottom: 2px;
+    right: 3px;
+    cursor: pointer;
+}
+
+#popular{
+    padding-top: 70px;
+    height: 500px;
+    display: grid;
+    justify-content: space-between;
+    font-size: x-large;
+}
+
+#populartext{
+    height: fit-content; 
+    width: 80vmax;
+    /* font-size: 60px; */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; 
+    text-align: left; 
+}
+
+.poptext{
+    border-bottom: 0.1px solid white;
+    margin: 0;
+    /* width: 25%; */
+    cursor: pointer;
+}
+
+#collection{
+    background-color: white;
+    padding: 150px ;
+    align-items: center;
+    justify-content: space-around;
+    display: flex;
+    flex-direction: column;
+}
+
+#collection-button{
+    /* width: 75%;  */
+    display: flex;
+    justify-content: space-between;
+}
+
+#collection-button button{
+    background-color: black; 
+    color: white; 
+    cursor: pointer;
+}
+
+.nitroimg{
+    margin-left: 30px;
+    /* height: 400px;
+    width: 400px; */
+    /* margin: 100px 0 100px 0; */
+}
+
+a {
+    color: inherit; 
+    text-decoration: none; 
+}
+
+.topnav {
+    background-color: #333;
+    position: relative;
+}
+  
+.topnav #myLinks {
+    display: none;
+}
+  
+.topnav a {
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    display: block;
+}
+  
+.topnav a.icon {
+    background: black;
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+  
+.topnav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+  
+.active {
+    background-color: #04AA6D;
+    color: white;
+}
+
+@media only screen and (min-width: 718.4px) and (max-width: 1535px){   /* 359 to 767 */
+    #navbar{height: 140px;}
+    #logo{font-size: 50px;}
+    #rightnav{display: none; font-size: 30px;}
+    .topnav{display: block;}
+    #hero{flex-direction: row;flex-wrap: wrap;height: fit-content;justify-content: space-around;}
+    #hero-left{margin-left: 20px;}
+    #hero-left-1{height: fit-content;font-size: 40px;}
+    #star{font-size: 30px;}
+    #hero-left p{font-size: 15px;}
+    #size-text a{font-size: 40px;}
+    #size{font-size: 32px;}
+    #size option {font-size: 12px;}
+    #add{height: 95px;font-size: 30px;}
+    #hero-photo{height: 500px;width: 500px;margin-left: 20px;}
+    #yeezy{flex-direction: row;flex-wrap: wrap;}
+    #yeezy-left h1{font-size: 60px;}
+    #yeezy-left p{font-size: 15px;}
+    #yeezy-right{height: 400px;width: 400px;}
+    #shopnow {height: 70px  ;width: 170px;}
+    #shopnow button{font-size: 15px}
+    #collection{flex-direction: row;flex-wrap: wrap;}
+    #collection-left h1{font-size: 40px;}
+    #collection-left h3{font-size: 30px;}
+    .nitroimg{height: 400px;width: 400px;padding-top: 100px;}
+    #collection-button{width: 100%;}
+    #collection-button button{height: 70px;width: 170px;font-size: 15px;}
+    #footer{font-size: 20px;}
+    #footer-icon{width: 125px;font-size: 20px;}
+}
+
+@media only screen and (min-width: 1536px) and (max-width: 1986px) {  /* 768 to 992 */
+    #navbar{height: 140px;}
+    #logo{font-size: 50px;}
+    #rightnav{font-size: 30px;}
+    #hero{flex-direction: row;flex-wrap: wrap;height: fit-content;}
+    #hero-left-1{height: fit-content;width: 600px;font-size: 60px;}
+    #star{font-size: 40px;}
+    #hero-left p{font-size: 27px;}
+    #size-text a{font-size: 50px;}
+    #size{font-size: 40px;}
+    #size option {font-size: 12px;}
+    #add{height: 110px;font-size: 40px;}
+    #hero-photo{height: 600px;width: 600px;}
+    #yeezy{flex-direction: row;flex-wrap: wrap;}
+    #yeezy-left h1{font-size: 80px;}
+    #yeezy-left p{font-size: 27px;}
+    #yeezy-right{height: 800px;width: 800px;}
+    #shopnow {height: 90px;width: 230px;}
+    #shopnow button{font-size: 20px}
+    #collection{flex-direction: row;flex-wrap: wrap;}
+    #collection-left h1{font-size: 60px;}
+    #collection-left h3{font-size: 40px;}
+    .nitroimg{height: 800px;width: 800px;padding-top: 100px;}
+    #collection-button{width:75%;}
+    #collection-button button{height: 90px;width: 230px;font-size: 25px;}
+    #footer{font-size: 30px;}
+    #footer-icon{width: 175px;font-size: 30px;}
+    .topnav{display: none;}
+}
+
+@media only screen and (min-width: 1987px) and (max-width: 2880px) {     /* 993 to 1400*/
+    #navbar{height: 180px;}
+    #logo{font-size: 80px;}
+    #rightnav{font-size: 40px;}
+    #hero{flex-direction: row;flex-wrap: wrap;height: fit-content;}
+    #hero-left-1{height: fit-content;width: 600px;font-size: 80px;}
+    #star{font-size: 60px;}
+    #hero-left p{font-size: 27px;}
+    #size-text a{font-size: 60px;}
+    #size{font-size: 45px;}
+    #size option {font-size: 22px;}
+    #add{height: 110px;font-size: 50px;}
+    #hero-photo{height: 1000px;width: 1000px;}
+    #yeezy{flex-direction: row;flex-wrap: wrap;}
+    #yeezy-left h1{font-size: 100px;}
+    #yeezy-left p{font-size: 27px;}
+    #yeezy-right{height: 1000px;width: 1000px;}
+    #shopnow {height: 90px;width: 230px;}
+    #shopnow button{font-size: 25px}
+    #collection{flex-direction: row;flex-wrap: wrap;}
+    #collection-left h1{font-size: 80px;}
+    #collection-left h3{font-size: 40px;}
+    .nitroimg{height: 1000px;width: 1000px;}
+    #collection-button{width: 75%;}
+    #collection-button button{height: 90px;width: 230px;font-size: 35px;}
+    #footer{font-size: 35px;}
+    #footer-icon{width: 175px;font-size: 30px;}
+    .topnav{display: none;}
+}
+/* 
+@media (min-width:1536px) {
+    #hero{flex-direction: row; flex-wrap: wrap;justify-content: center;}
+    #yeezy{flex-direction: row;flex-wrap: wrap;justify-content: center;}
+    #populartext{font-size: 60px;}
+    #collection{flex-direction: row;flex-wrap: wrap;}
+    .topnav{display: none;}
+    #rightnav{display: block;}
+} */
