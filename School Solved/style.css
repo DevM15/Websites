@@ -1,0 +1,537 @@
+
+body{
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    display: grid;
+    justify-content: center;
+    background-image: url(image/background.png) ;
+    background-repeat: no-repeat;
+}
+
+/* -----Navbar----- */
+
+.navbar{
+    height: 91;
+    display: flex;
+    align-items: center;
+    margin: 0 0 0 10%;
+    overflow: hidden;
+}
+
+.navbar a{
+    float: left;
+    font-size: 16px;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+#logo{
+    height: 58;
+    width: 187;
+    font-size: 24;
+    font-weight: bold;
+    align-content: center;
+    color: #252B42;
+}
+
+.navbar1{
+    width: 815;
+    height: 58;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 41;
+}
+
+#midnav{
+    width: 275;
+    height: 24;
+    font-size: 14;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #737373;
+}
+
+#rightnav{
+    width: 300;
+    height: 52;
+    font-size: 14;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #96BB7C;
+}
+
+#joinus1{
+    width: 214;
+    height: 52;
+    display: flex;
+    justify-content: left;
+}
+
+#joinus2{
+    width: 137;
+    border-radius: 5px;
+    color: white;
+    background-color: #96BB7C;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}   
+
+
+#joinus{
+    background-color: #96BB7C;
+    border: none;   
+    color: white;
+}
+
+/* -----Hero----- */
+
+.hero{
+    width: 1046;
+    padding: 0 0 80 10% ;
+}
+
+#herotop{
+    padding-top: 80;
+    display: flex;
+}
+
+#herotopleft{
+    width: 599;
+    display: grid;
+    justify-content: space-between;
+}
+
+h5.herotopleft{
+    color: #96BB7C;
+}
+
+h1.herotopleft{
+    color: #252B42;
+    font-size:58px;
+}
+
+h4.herotopleft{
+    font-weight: 400; font-size: large; color: #737373;
+}
+
+#cta{
+    width: 370;
+    font-size: 18;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#cta1{
+    height: 52;
+    width: 195;
+    background-color: #96BB7C; 
+    color: white; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+}
+
+#cta2{
+    height: 52;
+    width: 165; 
+    border: 1px solid #96BB7C;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #96BB7C;
+    border-radius: 5px;
+}
+
+#herotopright{
+    width: 415;
+    height: 415;
+    background-color: black;
+}
+
+#herocard{
+    display: grid;
+    justify-content: space-between;
+    height: fit-content;
+    width: 248;
+    padding: 40;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    background-color: white;
+}
+
+#herobottom{
+    display: flex;
+    width: 1046;
+    margin: 80 0 80 0;
+    justify-content: space-between;
+}
+
+#herocard1{
+    background-image: url('image/004-desktop-screen.png'); 
+    width: 72; 
+    height: 72;
+}
+
+#herocard2{
+    background-image: url('image/005-telescope.png'); 
+    width: 72; 
+    height: 72;
+}
+
+#herocard3{
+    background-image: url('image/006-flask.png'); 
+    width: 72; 
+    height: 72;
+}
+
+a.herocard{
+    font-size: 24; 
+    font-weight: bold; 
+    color: #252B42;
+}
+
+div.herocard{
+    height: 2;
+    width: 50;
+    background-color: #E74040;
+}
+
+p.herocard{
+    width: 221; 
+    font-size: 14; 
+    color: #737373; 
+    font-size: medium ;
+}
+
+
+
+/* ---layout2--- */
+
+#layout2{
+    height: 474;
+    width: 1045;
+    margin: 160 160 0 160;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.layout2{
+    display: grid;
+    justify-content: space-between;
+}
+
+
+/* ---layout4-- */
+
+#layout4{
+    width: 1049;
+    height: 1072px;
+    margin:120 160 196 160;
+    display: grid;
+    justify-content: space-between;
+}
+
+h6.layout4{
+    font-weight:bold ;font-size: 14; color: #96BB7C;
+}
+
+h2.layout4{
+    font-weight:bold ;font-size: 40; color: #252B42;
+}
+
+p.layout4{
+    font-size: 14; color: #737373;
+}
+
+.productcard{
+    width: 238;
+}
+
+#fixed-height1{
+    background-image: url(image/product-cover-133\ sec-.png); 
+    height: 300px;
+    position: relative;
+}
+
+#fixed-height2{
+    background-image: url(image/product-cover-132\ sec-.png); 
+    height: 300px;
+    position: relative;
+}
+
+#fixed-height3{
+    background-image: url(image/product-cover-130\ sec-.png); 
+    height: 300px;
+    position: relative;
+}
+
+#fixed-height4{
+    background-image: url(image/product-cover-131.png); 
+    height: 300px;
+    position: relative;
+}
+
+#tag_sec-{
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+    height: 24px;
+    width: 51px;
+    align-items: center; 
+    background-color: #E74040; 
+    position: absolute;
+    top: 20;
+    left: 20; 
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+    border-radius: 3px;
+}
+
+#product-action-sec-{
+    width: 140px; 
+    display: flex;
+    justify-content: space-between; 
+    position: absolute;
+    bottom: 24;
+    left: 49;
+}
+
+.productcardicon{
+    width: 40px;
+    height: 40px;
+    background-color: white;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+h6.cardbottom{
+    font-size: 14;
+    font-weight: bold;
+    color: #96BB7C;
+}
+
+.rating{
+    width: 50px;
+    height: 26px;
+    border-radius: 20px;
+    background-color: #2D4059;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+h5.cardbottom{
+    font-size: 16;
+    font-weight: bold;
+}
+
+p.cardbottom{
+    font-size: 14;
+}
+
+#button-sm-sec-{
+    width: 144px;
+    height: 44px;
+    border-radius: 37px;
+    border: 1px solid #96BB7C;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* ---layout5--- */
+
+#layout5{
+    margin:0 160 196 160;
+    display: grid;
+}
+
+h6.section-sec-{
+    font-size: 14;
+    font-weight: bold;
+    color: #96BB7C;
+}
+
+h2.section-sec-{
+    font-size: 40;
+    font-weight: bold;
+    color: #252B42;
+    margin: 0;
+}
+
+p.section-sec-{
+    font-size:14 ;
+    color: #737373;
+}
+
+#Testimonials{
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    width:508px;
+}
+
+#card-content{
+    display: grid;
+    justify-items: center;
+}
+
+#circle-sec{
+    width: 128px;
+    height: 128px;
+    border-radius: 200px;
+    overflow: hidden;
+}
+
+p.card-content{
+    width: 320px;
+    text-align: center;
+    font-size: 14;
+    color: #737373;
+}
+
+h5.card-content{
+    width: fit-content;
+    font-size: 16;
+    font-weight: bold;
+    height: fit-content;
+    text-align: centers;
+    margin-bottom: 5;
+    color: #252B42;
+}
+
+h6.card-content{
+    margin: 0;
+    font-size: 14;
+    font-weight: bold;
+    color: #737373;
+}
+
+/* ---layout6--- */
+
+#layout6{
+    width: 1440;
+    height: 594;
+    background-color: #FFF2F3;
+    display: flex;
+    justify-content: center;
+}
+
+.layout6{
+    width: 1050;
+    display: grid;
+    justify-content: center;
+    margin: 160 0 160 0;
+}
+
+h6.layout-6{
+    color: #96BB7C;
+    font-size: 14;
+    font-weight: bold;
+    margin: 0;
+}
+
+h3.layout-6{
+    color: #252B42;
+    font-size: 24;
+    font-weight: bold;
+    margin: 0;
+}
+
+p.layout-6{
+    color: #737373;
+    font-size: 14;
+    margin: 0;
+    text-align: center;
+}
+
+#row{
+    display: grid;
+    justify-items: center;
+    height: 116;
+}
+
+#row_sec-{
+    width: 688;
+    position: relative;  
+    border-radius: 5px;  
+    display: flex;
+}
+
+input{
+    width: 688;
+    height: 58px;
+    border: 1px solid #E6E6E6;
+    padding-left: 10pxs;
+    
+}
+
+#subscribe{
+    width: 117px;
+    height: 58px;
+    background-color: #96BB7C;
+    position: absolute;
+    right: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0px 5px 5px 0px ;
+}
+
+#footer{
+    width: 1440;
+    height: 346px;
+    display: grid;
+    justify-content: center;
+}
+
+#col-mid-2{
+    width: 148;
+    display: grid;
+    justify-content: space-between;
+}
+
+h5.col-mid-2{
+    color: #252B42;
+    font-size: 25;
+    font-weight: bolder;
+}
+
+a.col-mid-2{
+    color: #737373;
+    font-size: 14;
+    line-height: 2;
+}
+
+.feature{
+    color: #737373;
+    font-size: 14;
+    margin: 10;
+}
+
+#feature{
+    display: grid;
+    justify-items: center;
+    align-items: center;
+}
+
+.col-mid-7{
+    color: #737373;
+    font-size: 14;
+}
+
+#subscribe{
+    border: none;
+    color: white;
+}
