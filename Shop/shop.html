@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+		integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+		crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<title>Document</title>
+</head>
+<body>
+	<section class="nav">
+		
+		<div class="hamburger">
+			<i class="fa-solid fa-xmark" onclick="hidemenu()"></i>
+			<input type="text" placeholder="Search products...">
+			<ul>
+				<li><a href="index.html">HOME</a></li>
+				<li><a href="shop.html">SHOP</a></li>
+				<li><a href="track-order.html">TRACK ORDER</a></li>
+				<li><a href="blog.html">BLOG</a></li>
+				<li><a href="contact.html">CONTACT</a></li>
+				<li>Login / Register</li>
+			</ul>
+			
+		</div>
+		<div class="logo"><a href="index.html">EVENTBRITE</a></div>
+		<div class="nav-btn">
+			<div class="nav-pg">
+				<ul>
+					<li><a href="index.html">HOME</a></li>
+					<li class="dd"><a href="shop.html" >SHOP</a><i class="fa-solid fa-angle-down" style="color: #ffffff;"></i><div class="sub-nav">
+						<ul>
+							<li>My account</li>
+							<li>CheckOut</li>
+							<li>Cart</li>
+						</ul>
+					</div></li>
+					
+					<li><a href="track-order.html">TRACK ORDER</a></li>
+					<li><a href="blog.html">BLOG</a></li>
+					<li><a href="contact.html">CONTACT</a></li>
+				</ul>
+			</div>
+			<div class="nav-icon">
+				<i class="fa-solid fa-magnifying-glass"></i>
+				<i class="fa-regular fa-heart hidden"></i>
+				<i class="fa-regular fa-user hidden"></i>
+				<i class="fa-solid fa-cart-shopping hidden"></i>
+			</div>
+		</div>
+		<i class="fa-solid fa-bars" onclick="showmenu()"></i>
+	</section>
+	<section class="s-center">
+		<div class="sc-left">
+			<input type="text" placeholder="Search Products...">
+			<div class="scl-1">
+				<h3>Filter By</h3>
+				<input type="range" name="" id="scl-filter">
+				<button class="sclf-btn">Filter</button>Price:%10 - $180
+			</div>
+			<div class="scl-2">
+				<h3>Categories</h3>
+				<ul>
+					<li>Jacket (3)</li>
+					<li>Men (1)</li>
+					<li>T-shirt (2)</li>
+				</ul>
+			</div>
+			<div class="scl-3">
+				<h3>Top rated products</h3>
+				<div class="scl-3-card">
+					<img src="images/aj2.png" alt="" style="background-size: contain;width: 60px;padding: 10px;">
+					<div>
+						Buck Butte Insulated Hooded Jacket <br><br>
+					<i class="fa-solid fa-star" style="color: #FFD43B;"></i><i class="fa-solid fa-star"
+							style="color: #FFD43B;"></i><i class="fa-solid fa-star" style="color: #FFD43B;"></i><i
+							class="fa-solid fa-star" style="color: #FFD43B;"></i><i class="fa-solid fa-star"
+							style="color: #FFD43B;"></i><br>
+					$22.00 - $35.00
+					</div>
+				</div>
+				<div class="scl-3-card">
+					<img src="images/aj1.png" alt="" style="background-size: contain;width: 60px;padding: 10px;">
+					<div>
+						Drawstring Shirt Dress <br><br>
+						<i class="fa-solid fa-star" style="color: #FFD43B;"></i><i class="fa-solid fa-star"
+							style="color: #FFD43B;"></i><i class="fa-solid fa-star" style="color: #FFD43B;"></i><i
+							class="fa-solid fa-star" style="color: #FFD43B;"></i><i class="fa-solid fa-star"
+							style="color: #FFD43B;"></i><br>
+						$100
+					</div>	
+				</div>
+				<div class="scl-3-card">
+					<img src="images/aj3.png" alt="" style="background-size: contain;width: 60px;padding: 10px;">
+					<div>
+						Black Coat <br><br>
+						<i class="fa-solid fa-star" style="color: #FFD43B;"></i><i class="fa-solid fa-star"
+							style="color: #FFD43B;"></i><i class="fa-solid fa-star" style="color: #FFD43B;"></i><i
+							class="fa-solid fa-star" style="color: #FFD43B;"></i><i class="fa-solid fa-star"
+							style="color: #FFD43B;"></i><br>
+						$11.00
+					</div>
+				</div>
+			</div>
+			<div class="scl-4">
+				<h3>Color</h3>
+				<ul>
+					<li>Black (3)</li>
+					<li>orange (1)</li>
+					<li>White (1)</li>
+					<li>Red (2)</li>
+					<li>Green (3)</li>
+				</ul>
+			</div>
+			<div class="scl-5">
+				<h3>Product Tag</h3>
+				<div>
+					<span>autumn</span>
+					<span>Fashion</span>
+					<span>Finance</span>
+					<span>Jacket</span>
+					<span>man</span>
+					<span>Summmer</span>
+					<span>T-shirt</span>
+					<span>Winter</span>
+				</div>
+				
+			</div>
+		</div>
+		<div class="sc-right">
+			<div style="display: flex; justify-content: space-between; align-items: center;margin-bottom: 5%;"> 
+				Showing 1–6 of 11 results
+				<select name="" id="" style="padding: 1%;">
+				<option value="">Default sort</option>
+				</select>
+			</div>
+			<div style="display: flex; gap: 10px; flex-wrap: wrap; margin: 20px 0;    justify-content: space-between;">
+				<div class="f-card">
+					<div class="fc-t">
+						<img src="images/aj1.png" alt="">
+						<span class="fav"><i class="fa-regular fa-heart"></i></span>
+					</div>
+					<div class="fc-b">
+						Pink Coat
+						<div>
+							<i class="fa-solid fa-star" style="color: #FFD43B;"></i><i class="fa-solid fa-star"
+								style="color: #FFD43B;"></i><i class="fa-solid fa-star" style="color: #FFD43B;"></i><i
+								class="fa-solid fa-star" style="color: #FFD43B;"></i><i class="fa-solid fa-star"
+								style="color: #FFD43B;"></i>
+						</div>
+						$11
+					</div>
+				</div>
+				<div class="f-card">
+					<div class="fc-t">
+						<img src="images/aj2.png" alt="">
+						<span class="fav"><i class="fa-regular fa-heart"></i></span>
+					</div>
+					<div class="fc-b">
+						Grey Shirt
+						<div>
+							<i class="fa-solid fa-star" style="color: #FFD43B;"></i><i class="fa-solid fa-star"
+								style="color: #FFD43B;"></i><i class="fa-solid fa-star" style="color: #FFD43B;"></i><i
+								class="fa-solid fa-star" style="color: #FFD43B;"></i><i class="fa-solid fa-star"
+								style="color: #FFD43B;"></i>
+						</div>
+						$52
+					</div>
+				</div>
+				<div class="f-card">
+					<div class="fc-t">
+						<img src="images/aj3.png" alt="">
+						<span class="fav"><i class="fa-regular fa-heart"></i></span>
+					</div>
+					<div class="fc-b">
+						White Shirt
+						<div>
+							<i class="fa-solid fa-star" style="color: #FFD43B;"></i><i class="fa-solid fa-star"
+								style="color: #FFD43B;"></i><i class="fa-solid fa-star" style="color: #FFD43B;"></i><i
+								class="fa-solid fa-star" style="color: #FFD43B;"></i><i class="fa-solid fa-star"
+								style="color: #FFD43B;"></i>
+						</div>
+						$22 - $35
+					</div>
+				</div>
+				<div class="f-card">
+					<div class="fc-t">
+						<img src="images/aj4.png" alt="">
+						<span class="soldOut">Sold Out</span>
+						<span class="fav"><i class="fa-regular fa-heart"></i></span>
+					</div>
+					<div class="fc-b">
+						Black T-shirt
+						<div>
+							<i class="fa-solid fa-star" style="color: #FFD43B;"></i><i class="fa-solid fa-star"
+								style="color: #FFD43B;"></i><i class="fa-solid fa-star" style="color: #FFD43B;"></i><i
+								class="fa-solid fa-star" style="color: #FFD43B;"></i><i class="fa-solid fa-star"
+								style="color: #FFD43B;"></i>
+						</div>
+						$100
+					</div>
+				</div>
+				<div class="f-card">
+					<div class="fc-t">
+						<img src="images/aj1.png" alt="">
+						<span class="Discount" style>- 6%</span>
+						<span class="fav"><i class="fa-regular fa-heart"></i></span>
+					</div>
+					<div class="fc-b">
+						Pink Coat
+						<div>
+							<i class="fa-solid fa-star" style="color: #FFD43B;"></i><i class="fa-solid fa-star"
+								style="color: #FFD43B;"></i><i class="fa-solid fa-star" style="color: #FFD43B;"></i><i
+								class="fa-solid fa-star" style="color: #FFD43B;"></i><i class="fa-solid fa-star"
+								style="color: #FFD43B;"></i>
+						</div>
+						$11
+					</div>
+				</div>
+				<div class="f-card">
+					<div class="fc-t">
+						<img src="images/aj2.png" alt="">
+						<span class="Discount" style>- 4%</span>
+						<span class="fav"><i class="fa-regular fa-heart"></i></span>
+					</div>
+					<div class="fc-b">
+						Grey Shirt
+						<div>
+							<i class="fa-solid fa-star" style="color: #FFD43B;"></i><i class="fa-solid fa-star"
+								style="color: #FFD43B;"></i><i class="fa-solid fa-star" style="color: #FFD43B;"></i><i
+								class="fa-solid fa-star" style="color: #FFD43B;"></i><i class="fa-solid fa-star"
+								style="color: #FFD43B;"></i>
+						</div>
+						$52
+					</div>
+				</div>
+				<div class="f-card">
+					<div class="fc-t">
+						<img src="images/aj3.png" alt="">
+						<span class="fav"><i class="fa-regular fa-heart"></i></span>
+					</div>
+					<div class="fc-b">
+						White Shirt
+						<div>
+							<i class="fa-solid fa-star" style="color: #FFD43B;"></i><i class="fa-solid fa-star"
+								style="color: #FFD43B;"></i><i class="fa-solid fa-star" style="color: #FFD43B;"></i><i
+								class="fa-solid fa-star" style="color: #FFD43B;"></i><i class="fa-solid fa-star"
+								style="color: #FFD43B;"></i>
+						</div>
+						$22 - $35
+					</div>
+				</div>
+				<div class="f-card">
+					<div class="fc-t">
+						<img src="images/aj4.png" alt="">
+						<span class="soldOut">Sold Out</span>
+						<span class="fav"><i class="fa-regular fa-heart"></i></span>
+					</div>
+					<div class="fc-b">
+						Black T-shirt
+						<div>
+							<i class="fa-solid fa-star" style="color: #FFD43B;"></i><i class="fa-solid fa-star"
+								style="color: #FFD43B;"></i><i class="fa-solid fa-star" style="color: #FFD43B;"></i><i
+								class="fa-solid fa-star" style="color: #FFD43B;"></i><i class="fa-solid fa-star"
+								style="color: #FFD43B;"></i>
+						</div>
+						$100
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="footer">
+		<div class="f-top">
+			<div>
+				<h1>Woostify</h1>
+				<p>You can easily edit this paragraph to talk about your brand as well as your products to your
+					potential customers.</p>
+				<div class="icon">
+					<i class="fa-brands fa-facebook"></i><i class="fa-brands fa-twitter"></i><i
+						class="fa-brands fa-pinterest"></i><i class="fa-brands fa-youtube"></i>
+				</div>
+			</div>
+			<div class="f-btn">
+				<a>Shop</a>
+				<ul>
+					<li>Terms & Conditions</li>
+					<li>Sitemap</li>
+					<li>Press</li>
+				</ul>
+			</div>
+			<div class="f-btn">
+				<a>Support</a>
+				<ul>
+					<li>Documentation</li>
+					<li>Help Center</li>
+					<li>General FAQs</li>
+				</ul>
+			</div>
+			<div>
+				Newsletter
+				<p>Get 20% off for your first order by joining to our newsletter.</p>
+				<div class="cta"><input type="email" placeholder="your@email.com" class="box"><input type="submit"
+						class="submit"></div>
+			</div>
+		</div>
+		<div style="text-align: center;">© 2021 Woostify Privacy Policy All rights reserved. Designed & developed by
+			woostify</div>
+	</section>
+	<script>
+		var burger = document.querySelector(".hamburger")
+		function hidemenu(){
+			burger.style.left = "-700px" 
+		}
+		function showmenu(){
+			burger.style.left = "0px"
+		}
+	</script>
+</body>
+</html>

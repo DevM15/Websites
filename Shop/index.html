@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+		integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+		crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<title>Shop</title>
+</head>
+
+<body>
+	<section class="nav">
+		
+		<div class="hamburger">
+			<i class="fa-solid fa-xmark" onclick="hidemenu()"></i>
+			<input type="text" placeholder="Search products...">
+			<ul>
+				<li><a href="index.html">HOME</a></li>
+				<li><a href="shop.html">SHOP</a></li>
+				<li><a href="track-order.html">TRACK ORDER</a></li>
+				<li><a href="blog.html">BLOG</a></li>
+				<li><a href="contact.html">CONTACT</a></li>
+				<li>Login / Register</li>
+			</ul>
+			
+		</div>
+		<div class="logo"><a href="index.html">EVENTBRITE</a></div>
+		<div class="nav-btn">
+			<div class="nav-pg">
+				<ul>
+					<li><a href="index.html">HOME</a></li>
+					<li class="dd"><a href="shop.html" >SHOP</a><i class="fa-solid fa-angle-down" style="color: #ffffff;"></i><div class="sub-nav">
+						<ul>
+							<li>My account</li>
+							<li>CheckOut</li>
+							<li>Cart</li>
+						</ul>
+					</div></li>
+					
+					<li><a href="track-order.html">TRACK ORDER</a></li>
+					<li><a href="blog.html">BLOG</a></li>
+					<li><a href="contact.html">CONTACT</a></li>
+				</ul>
+			</div>
+			<div class="nav-icon">
+				<i class="fa-solid fa-magnifying-glass"></i>
+				<i class="fa-regular fa-heart hidden"></i>
+				<i class="fa-regular fa-user hidden"></i>
+				<i class="fa-solid fa-cart-shopping hidden"></i>
+			</div>
+		</div>
+		<i class="fa-solid fa-bars" onclick="showmenu()"></i>
+	</section>
+	<section class="hero">
+		<div class="h-row1">
+			<div class="hr1-col1">
+				<ul>
+					<li>Home & Garden</li>
+					<li>Electronics</li>
+					<li>Fashion</li>
+					<li>Lifestyle</li>
+					<li>Home & Garden</li>
+					<li>Electronics</li>
+					<li>Fashion</li>
+					<li>Lifestyle</li>
+				</ul>
+			</div>
+			<div class="hr1-col2">
+				<h4>MEN FASHION</h4>
+				<h1>NEW SUMMER <br> COLLECTION 2024</h1>
+				<h4>Discount 30% OFF this Week</h4>
+				<button>Shop Now</button>
+			</div>
+		</div>
+		<div class="h-row2">
+			<div class="hr2-card">
+				<i class="fa-solid fa-truck-fast"></i>
+				<div>
+					<h4>Fast, Free Shipping</h4>On order over $50
+				</div>
+			</div>
+			<div class="hr2-card">
+				<i class="fa-solid fa-clock-rotate-left"></i>
+				<div>
+					<h4>Next Day Delivery</h4>Free- spend over $99
+				</div>
+			</div>
+			<div class="hr2-card">
+				<i class="fa-solid fa-circle-dollar-to-slot"></i>
+				<div>
+					<h4>Low Price Guarantee</h4>We offer competitive prices
+				</div>
+			</div>
+			<div class="hr2-card">
+				<i class="fa-solid fa-thumbs-up"></i>
+				<div>
+					<h4>Satisfaction Guarantee</h4>We Guarantee Our Products
+				</div>
+			</div>
+		</div>
+		<div class="h-row3">
+			<div class="hr3-card" style="background-color: lightblue; color: blue;">
+				<img src="images/ipad.png" alt="">
+				<h6>NEW ARRIVALS</h6>
+				<h5>WORK and PLAY</h5>
+				<p>Enjoy a 3-year guarantee <br>included</p><br>
+				<u>Shop Now</u>
+			</div>
+			<div class="hr3-card" style="background-color: pink; color: darkorchid;">
+				<img src="images/shoes.png" alt="" style=" height: 100%;">
+				<h6>WEEKLY PICKS</h6>
+				<h5>Trail Running</h5>
+				<p>Comfortable Confident Fit</p><br>
+				<u>Shop Now</u>
+			</div>
+			<div class="hr3-card" style="background-color: gold; color: rgb(184, 134, 11);">
+				<img src="images/shave.png" alt="">
+				<h6>FEATURED</h6>
+				<h5>Hygienic Shaving</h5>
+				<p>Your best shave or your <br>money back</p><br>
+				<u>Shop Now</u>
+			</div>
+		</div>
+	</section>
+	<br><br><br>
+	<section class="feat">
+		<h1>Featured Product</h1><br>
+		<p>EXPLORE THE LATEST MODEL FROM THE PAST WEEK</p>
+		<br><br><br>
+		<div>
+			<div class="f-card">
+				<div class="fc-t">
+					<img src="images/aj1.png" alt="">
+					<span class="fav"><i class="fa-regular fa-heart"></i></span>
+				</div>
+				<div class="fc-b">
+					Pink Coat
+					<div>
+						<i class="fa-solid fa-star" style="color: #FFD43B;"></i><i class="fa-solid fa-star"
+							style="color: #FFD43B;"></i><i class="fa-solid fa-star" style="color: #FFD43B;"></i><i
+							class="fa-solid fa-star" style="color: #FFD43B;"></i><i class="fa-solid fa-star"
+							style="color: #FFD43B;"></i>
+					</div>
+					$11
+				</div>
+			</div>
+			<div class="f-card">
+				<div class="fc-t">
+					<img src="images/aj2.png" alt="">
+					<span class="fav"><i class="fa-regular fa-heart"></i></span>
+				</div>
+				<div class="fc-b">
+					Grey Shirt
+					<div>
+						<i class="fa-solid fa-star" style="color: #FFD43B;"></i><i class="fa-solid fa-star"
+							style="color: #FFD43B;"></i><i class="fa-solid fa-star" style="color: #FFD43B;"></i><i
+							class="fa-solid fa-star" style="color: #FFD43B;"></i><i class="fa-solid fa-star"
+							style="color: #FFD43B;"></i>
+					</div>
+					$52
+				</div>
+			</div>
+			<div class="f-card">
+				<div class="fc-t">
+					<img src="images/aj3.png" alt="">
+					<span class="fav"><i class="fa-regular fa-heart"></i></span>
+				</div>
+				<div class="fc-b">
+					White Shirt
+					<div>
+						<i class="fa-solid fa-star" style="color: #FFD43B;"></i><i class="fa-solid fa-star"
+							style="color: #FFD43B;"></i><i class="fa-solid fa-star" style="color: #FFD43B;"></i><i
+							class="fa-solid fa-star" style="color: #FFD43B;"></i><i class="fa-solid fa-star"
+							style="color: #FFD43B;"></i>
+					</div>
+					$22 - $35
+				</div>
+			</div>
+			<div class="f-card">
+				<div class="fc-t">
+					<img src="images/aj4.png" alt="">
+					<span class="soldOut">Sold Out</span>
+					<span class="fav"><i class="fa-regular fa-heart"></i></span>
+				</div>
+				<div class="fc-b">
+					Black T-shirt
+					<div>
+						<i class="fa-solid fa-star" style="color: #FFD43B;"></i><i class="fa-solid fa-star"
+							style="color: #FFD43B;"></i><i class="fa-solid fa-star" style="color: #FFD43B;"></i><i
+							class="fa-solid fa-star" style="color: #FFD43B;"></i><i class="fa-solid fa-star"
+							style="color: #FFD43B;"></i>
+					</div>
+					$100
+				</div>
+			</div>
+			<div class="f-card">
+				<div class="fc-t">
+					<img src="images/aj1.png" alt="">
+					<span class="Discount" style>- 6%</span>
+					<span class="fav"><i class="fa-regular fa-heart"></i></span>
+				</div>
+				<div class="fc-b">
+					Pink Coat
+					<div>
+						<i class="fa-solid fa-star" style="color: #FFD43B;"></i><i class="fa-solid fa-star"
+							style="color: #FFD43B;"></i><i class="fa-solid fa-star" style="color: #FFD43B;"></i><i
+							class="fa-solid fa-star" style="color: #FFD43B;"></i><i class="fa-solid fa-star"
+							style="color: #FFD43B;"></i>
+					</div>
+					$11
+				</div>
+			</div>
+			<div class="f-card">
+				<div class="fc-t">
+					<img src="images/aj2.png" alt="">
+					<span class="Discount" style>- 4%</span>
+					<span class="fav"><i class="fa-regular fa-heart"></i></span>
+				</div>
+				<div class="fc-b">
+					Grey Shirt
+					<div>
+						<i class="fa-solid fa-star" style="color: #FFD43B;"></i><i class="fa-solid fa-star"
+							style="color: #FFD43B;"></i><i class="fa-solid fa-star" style="color: #FFD43B;"></i><i
+							class="fa-solid fa-star" style="color: #FFD43B;"></i><i class="fa-solid fa-star"
+							style="color: #FFD43B;"></i>
+					</div>
+					$52
+				</div>
+			</div>
+			<div class="f-card">
+				<div class="fc-t">
+					<img src="images/aj3.png" alt="">
+					<span class="fav"><i class="fa-regular fa-heart"></i></span>
+				</div>
+				<div class="fc-b">
+					White Shirt
+					<div>
+						<i class="fa-solid fa-star" style="color: #FFD43B;"></i><i class="fa-solid fa-star"
+							style="color: #FFD43B;"></i><i class="fa-solid fa-star" style="color: #FFD43B;"></i><i
+							class="fa-solid fa-star" style="color: #FFD43B;"></i><i class="fa-solid fa-star"
+							style="color: #FFD43B;"></i>
+					</div>
+					$22 - $35
+				</div>
+			</div>
+			<div class="f-card">
+				<div class="fc-t">
+					<img src="images/aj4.png" alt="">
+					<span class="soldOut">Sold Out</span>
+					<span class="fav"><i class="fa-regular fa-heart"></i></span>
+				</div>
+				<div class="fc-b">
+					Black T-shirt
+					<div>
+						<i class="fa-solid fa-star" style="color: #FFD43B;"></i><i class="fa-solid fa-star"
+							style="color: #FFD43B;"></i><i class="fa-solid fa-star" style="color: #FFD43B;"></i><i
+							class="fa-solid fa-star" style="color: #FFD43B;"></i><i class="fa-solid fa-star"
+							style="color: #FFD43B;"></i>
+					</div>
+					$100
+				</div>
+			</div>
+		</div>
+	</section>
+	<br><br><br>
+	<section class="new-section" hidden>
+		<h1>What's new</h1><br>
+		<p>EXPLORE THE LATEST MODELS FROM THE PAST WEEK</p><br><br><br>
+		<div class="new">
+			<div style="position: relative;">
+				<img src="images/shop-cat-1-2.jpg" alt="">
+				<div style="position: absolute; top: 20px;left: 20px; color: #4a4a4a;font-size: 18px;">
+					The new men’s
+					<h1 style="font-size: 60px;font-weight: bolder;">casual <br> collection</h1> <br>
+					For you from New York.
+				</div>
+			</div>
+			<div style="display: flex; flex-direction: column;  justify-content: space-between;">
+				<div style="position: relative;">
+					<img src="images/shop-cat-2-2.jpg" alt="">
+					<div style="position: absolute;top: 20px;left: 50%; color: white;">
+						<h1><c style="color: #be9786;" >DISCOVER</c> <br>
+							YOUR <br>
+							WORLD
+						</h1><br>
+						<p style="color: #be9786;">The world at your feet</p><br>
+						<button class="btn-s">Explore Now</button>
+					</div>
+				</div>
+				<div style="position: relative;">
+					<img src="images/shop-cat-3-1.jpg" alt="">
+					<div style="position: absolute;top: 20px;left: 15%;">
+						<h1>STUDENT <br>
+							DISCOUNT <br>
+							<c style="color: #a6b1b6;">30% OFF</c>
+						</h1><br>
+						<p>Shoes for all students</p><br>
+						<button class="btn-s2">Shop Now</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<br><br><br>
+	<section class="feat">
+		<h1>Featured Product</h1><br>
+		<p>EXPLORE THE LATEST MODEL FROM THE PAST WEEK</p>
+		<br><br><br>
+		<div>
+			<div class="f-card">
+				<div class="fc-t">
+					<img src="images/aj1.png" alt="">
+					<span class="fav"><i class="fa-regular fa-heart"></i></span>
+				</div>
+				<div class="fc-b">
+					Pink Coat
+					<div>
+						<i class="fa-solid fa-star" style="color: #FFD43B;"></i><i class="fa-solid fa-star"
+							style="color: #FFD43B;"></i><i class="fa-solid fa-star" style="color: #FFD43B;"></i><i
+							class="fa-solid fa-star" style="color: #FFD43B;"></i><i class="fa-solid fa-star"
+							style="color: #FFD43B;"></i>
+					</div>
+					$11
+				</div>
+			</div>
+			<div class="f-card">
+				<div class="fc-t">
+					<img src="images/aj2.png" alt="">
+					<span class="fav"><i class="fa-regular fa-heart"></i></span>
+				</div>
+				<div class="fc-b">
+					Grey Shirt
+					<div>
+						<i class="fa-solid fa-star" style="color: #FFD43B;"></i><i class="fa-solid fa-star"
+							style="color: #FFD43B;"></i><i class="fa-solid fa-star" style="color: #FFD43B;"></i><i
+							class="fa-solid fa-star" style="color: #FFD43B;"></i><i class="fa-solid fa-star"
+							style="color: #FFD43B;"></i>
+					</div>
+					$52
+				</div>
+			</div>
+			<div class="f-card">
+				<div class="fc-t">
+					<img src="images/aj3.png" alt="">
+					<span class="fav"><i class="fa-regular fa-heart"></i></span>
+				</div>
+				<div class="fc-b">
+					White Shirt
+					<div>
+						<i class="fa-solid fa-star" style="color: #FFD43B;"></i><i class="fa-solid fa-star"
+							style="color: #FFD43B;"></i><i class="fa-solid fa-star" style="color: #FFD43B;"></i><i
+							class="fa-solid fa-star" style="color: #FFD43B;"></i><i class="fa-solid fa-star"
+							style="color: #FFD43B;"></i>
+					</div>
+					$22 - $35
+				</div>
+			</div>
+			<div class="f-card">
+				<div class="fc-t">
+					<img src="images/aj4.png" alt="">
+					<span class="soldOut">Sold Out</span>
+					<span class="fav"><i class="fa-regular fa-heart"></i></span>
+				</div>
+				<div class="fc-b">
+					Black T-shirt
+					<div>
+						<i class="fa-solid fa-star" style="color: #FFD43B;"></i><i class="fa-solid fa-star"
+							style="color: #FFD43B;"></i><i class="fa-solid fa-star" style="color: #FFD43B;"></i><i
+							class="fa-solid fa-star" style="color: #FFD43B;"></i><i class="fa-solid fa-star"
+							style="color: #FFD43B;"></i>
+					</div>
+					$100
+				</div>
+			</div>
+			<div class="f-card">
+				<div class="fc-t">
+					<img src="images/aj1.png" alt="">
+					<span class="Discount" style>- 6%</span>
+					<span class="fav"><i class="fa-regular fa-heart"></i></span>
+				</div>
+				<div class="fc-b">
+					Pink Coat
+					<div>
+						<i class="fa-solid fa-star" style="color: #FFD43B;"></i><i class="fa-solid fa-star"
+							style="color: #FFD43B;"></i><i class="fa-solid fa-star" style="color: #FFD43B;"></i><i
+							class="fa-solid fa-star" style="color: #FFD43B;"></i><i class="fa-solid fa-star"
+							style="color: #FFD43B;"></i>
+					</div>
+					$11
+				</div>
+			</div>
+			<div class="f-card">
+				<div class="fc-t">
+					<img src="images/aj2.png" alt="">
+					<span class="Discount" style>- 4%</span>
+					<span class="fav"><i class="fa-regular fa-heart"></i></span>
+				</div>
+				<div class="fc-b">
+					Grey Shirt
+					<div>
+						<i class="fa-solid fa-star" style="color: #FFD43B;"></i><i class="fa-solid fa-star"
+							style="color: #FFD43B;"></i><i class="fa-solid fa-star" style="color: #FFD43B;"></i><i
+							class="fa-solid fa-star" style="color: #FFD43B;"></i><i class="fa-solid fa-star"
+							style="color: #FFD43B;"></i>
+					</div>
+					$52
+				</div>
+			</div>
+			<div class="f-card">
+				<div class="fc-t">
+					<img src="images/aj3.png" alt="">
+					<span class="fav"><i class="fa-regular fa-heart"></i></span>
+				</div>
+				<div class="fc-b">
+					White Shirt
+					<div>
+						<i class="fa-solid fa-star" style="color: #FFD43B;"></i><i class="fa-solid fa-star"
+							style="color: #FFD43B;"></i><i class="fa-solid fa-star" style="color: #FFD43B;"></i><i
+							class="fa-solid fa-star" style="color: #FFD43B;"></i><i class="fa-solid fa-star"
+							style="color: #FFD43B;"></i>
+					</div>
+					$22 - $35
+				</div>
+			</div>
+			<div class="f-card">
+				<div class="fc-t">
+					<img src="images/aj4.png" alt="">
+					<span class="soldOut">Sold Out</span>
+					<span class="fav"><i class="fa-regular fa-heart"></i></span>
+				</div>
+				<div class="fc-b">
+					Black T-shirt
+					<div>
+						<i class="fa-solid fa-star" style="color: #FFD43B;"></i><i class="fa-solid fa-star"
+							style="color: #FFD43B;"></i><i class="fa-solid fa-star" style="color: #FFD43B;"></i><i
+							class="fa-solid fa-star" style="color: #FFD43B;"></i><i class="fa-solid fa-star"
+							style="color: #FFD43B;"></i>
+					</div>
+					$100
+				</div>
+			</div>
+		</div>
+	</section>
+	<br><br><br>
+	<section class="footer">
+		<div class="f-top">
+			<div>
+				<h1>Woostify</h1>
+				<p>You can easily edit this paragraph to talk about your brand as well as your products to your
+					potential customers.</p>
+				<div class="icon">
+					<i class="fa-brands fa-facebook"></i><i class="fa-brands fa-twitter"></i><i
+						class="fa-brands fa-pinterest"></i><i class="fa-brands fa-youtube"></i>
+				</div>
+			</div>
+			<div class="f-btn">
+				<a>Shop</a>
+				<ul>
+					<li>Terms & Conditions</li>
+					<li>Sitemap</li>
+					<li>Press</li>
+				</ul>
+			</div>
+			<div class="f-btn">
+				<a>Support</a>
+				<ul>
+					<li>Documentation</li>
+					<li>Help Center</li>
+					<li>General FAQs</li>
+				</ul>
+			</div>
+			<div>
+				Newsletter
+				<p>Get 20% off for your first order by joining to our newsletter.</p>
+				<div class="cta"><input type="email" placeholder="your@email.com" class="box"><input type="submit"
+						class="submit"></div>
+			</div>
+		</div>
+		<div style="text-align: center;">© 2021 Woostify Privacy Policy All rights reserved. Designed & developed by
+			woostify</div>
+	</section>
+	<script>
+		var burger = document.querySelector(".hamburger")
+		function hidemenu(){
+			burger.style.left = "-700px" 
+		}
+		function showmenu(){
+			burger.style.left = "0px"
+		}
+	</script>
+</body>
+
+</html>

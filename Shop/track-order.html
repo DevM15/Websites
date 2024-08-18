@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+		integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+		crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<title>Track Order</title>
+</head>
+<body>
+	<section class="nav">
+		
+		<div class="hamburger">
+			<i class="fa-solid fa-xmark" onclick="hidemenu()"></i>
+			<input type="text" placeholder="Search products...">
+			<ul>
+				<li><a href="index.html">HOME</a></li>
+				<li><a href="shop.html">SHOP</a></li>
+				<li><a href="track-order.html">TRACK ORDER</a></li>
+				<li><a href="blog.html">BLOG</a></li>
+				<li><a href="contact.html">CONTACT</a></li>
+				<li>Login / Register</li>
+			</ul>
+			
+		</div>
+		<div class="logo"><a href="index.html">EVENTBRITE</a></div>
+		<div class="nav-btn">
+			<div class="nav-pg">
+				<ul>
+					<li><a href="index.html">HOME</a></li>
+					<li class="dd"><a href="shop.html" >SHOP</a><i class="fa-solid fa-angle-down" style="color: #ffffff;"></i><div class="sub-nav">
+						<ul>
+							<li>My account</li>
+							<li>CheckOut</li>
+							<li>Cart</li>
+						</ul>
+					</div></li>
+					
+					<li><a href="track-order.html">TRACK ORDER</a></li>
+					<li><a href="blog.html">BLOG</a></li>
+					<li><a href="contact.html">CONTACT</a></li>
+				</ul>
+			</div>
+			<div class="nav-icon">
+				<i class="fa-solid fa-magnifying-glass"></i>
+				<i class="fa-regular fa-heart hidden"></i>
+				<i class="fa-regular fa-user hidden"></i>
+				<i class="fa-solid fa-cart-shopping hidden"></i>
+			</div>
+		</div>
+		<i class="fa-solid fa-bars" onclick="showmenu()"></i>
+	</section>
+	<section class="to-center">
+		<p>To track your order please enter your Order ID in the box below and press the "Track" button. This was given to you on your receipt and in the confirmation email you should have received.</p>
+		<div>
+			<div class="to-center-in">Order ID <input type="number" placeholder="Email you used during checkout" style="width: 95%;"></div>
+			<div class="to-center-in">Billing Email <input type="email" placeholder="Get your ID in order comformation email" style="width: 95%;"></div>
+		</div>
+		<button type="button">Track</button>
+	</section>
+	<section class="footer">
+		<div class="f-top">
+			<div>
+				<h1>Woostify</h1>
+				<p>You can easily edit this paragraph to talk about your brand as well as your products to your
+					potential customers.</p>
+				<div class="icon">
+					<i class="fa-brands fa-facebook"></i><i class="fa-brands fa-twitter"></i><i
+						class="fa-brands fa-pinterest"></i><i class="fa-brands fa-youtube"></i>
+				</div>
+			</div>
+			<div class="f-btn">
+				<a>Shop</a>
+				<ul>
+					<li>Terms & Conditions</li>
+					<li>Sitemap</li>
+					<li>Press</li>
+				</ul>
+			</div>
+			<div class="f-btn">
+				<a>Support</a>
+				<ul>
+					<li>Documentation</li>
+					<li>Help Center</li>
+					<li>General FAQs</li>
+				</ul>
+			</div>
+			<div>
+				Newsletter
+				<p>Get 20% off for your first order by joining to our newsletter.</p>
+				<div class="cta"><input type="email" placeholder="your@email.com" class="box"><input type="submit"
+						class="submit"></div>
+			</div>
+		</div>
+		<div style="text-align: center;">© 2021 Woostify Privacy Policy All rights reserved. Designed & developed by
+			woostify</div>
+	</section>
+	<script>
+		var burger = document.querySelector(".hamburger")
+		function hidemenu(){
+			burger.style.left = "-700px" 
+		}
+		function showmenu(){
+			burger.style.left = "0px"
+		}
+	</script>
+</body>
+</html>
