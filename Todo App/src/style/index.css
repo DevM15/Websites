@@ -1,0 +1,82 @@
+#root{
+  display: flex;
+  justify-content: center;
+}
+
+h1,h3{
+  text-align: center;
+}
+
+main{
+  width: max(50%, 800px);
+  padding: 14px;
+  border-radius: 14px;
+}
+
+.hero{
+  background-color: #eff6ff;
+  padding: 14px;
+  border-radius: 14px;
+}
+
+.hero ol{
+  padding: 0 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.hero ol li {
+  display: flex;
+  background-color: white;
+  padding: 0 14px;
+
+}
+
+.hero ol li p{
+  flex: 1;
+}
+
+.actionContainer{
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.input{
+  padding: 0 40px;
+  display: flex;
+  gap: 14px;
+}
+
+input{
+  flex: 1;
+  border: none;
+  padding: 14px;
+  border-radius: 14px;
+}
+
+.add{
+  border: none;
+  background-color: white;
+  border-radius: 14px;
+  padding: 14px;
+  cursor: pointer;
+  transition: 400ms;
+}
+
+.add:hover{
+  background-color: #d5e3f6;
+}
+
+li button{
+  border: none;
+  background: white;
+  transition: 400ms;
+  cursor: pointer;
+}
+
+li button:hover{
+  color: #d5e3f6;
+}
+
