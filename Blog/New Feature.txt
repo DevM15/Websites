@@ -1,0 +1,2 @@
+A Button to Edit the Post.
+A Button to Delete the Post.

@@ -1,0 +1,1 @@
+add a message to the chat room when there is no message
