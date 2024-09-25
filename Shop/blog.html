@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,9 +10,9 @@
 		crossorigin="anonymous" referrerpolicy="no-referrer" />
 	<title>Document</title>
 </head>
+
 <body>
 	<section class="nav">
-		
 		<div class="hamburger">
 			<i class="fa-solid fa-xmark" onclick="hidemenu()"></i>
 			<input type="text" placeholder="Search products...">
@@ -21,23 +22,27 @@
 				<li><a href="track-order.html">TRACK ORDER</a></li>
 				<li><a href="blog.html">BLOG</a></li>
 				<li><a href="contact.html">CONTACT</a></li>
-				<li>Login / Register</li>
+				<li><a onclick="handleSignIn();hidemenu()">LOGIN</a></li>
+				<li><a onclick="handleSignUp();hidemenu()">REGISTER</a></li>
 			</ul>
-			
+
 		</div>
 		<div class="logo"><a href="index.html">EVENTBRITE</a></div>
 		<div class="nav-btn">
 			<div class="nav-pg">
 				<ul>
 					<li><a href="index.html">HOME</a></li>
-					<li class="dd"><a href="shop.html" >SHOP</a><i class="fa-solid fa-angle-down" style="color: #ffffff;"></i><div class="sub-nav">
-						<ul>
-							<li>My account</li>
-							<li>CheckOut</li>
-							<li>Cart</li>
-						</ul>
-					</div></li>
-					
+					<li class="dd">
+						<a href="shop.html">SHOP</a>
+						<i class="fa-solid fa-angle-down" style="color: #ffffff;"></i>
+						<div class="sub-nav">
+							<ul>
+								<li><a onclick="handleSignIn()" id="signIn">My account</a></li>
+								<li>CheckOut</li>
+								<li>Cart</li>
+							</ul>
+						</div>
+					</li>
 					<li><a href="track-order.html">TRACK ORDER</a></li>
 					<li><a href="blog.html">BLOG</a></li>
 					<li><a href="contact.html">CONTACT</a></li>
@@ -55,22 +60,35 @@
 	<section class="b-center">
 		<div class="bc-left">
 			<div class="bcl-card">
-				<img src="images/blog-img-7.jpg" alt="" style="height: 180px;float: left;margin: 0 20px;">
-				<h1>Deconstructing The #OOTD Pose</h1><br>
-				<h3>October 16, 2018 January 6, 2024.by NayyarShaikh. No comments yet</h3><br>
-				<p>Donec accumsan auctor iaculis. Sed suscipit arcu ligula, at egestas magna molestie a. Proin ac ex maximus, ultrices justo eget, sodales orci. Aliquam egestas libero ac turpis pharetra, in vehicula lacus scelerisque. Vestibulum ut sem laoreet. Lorem ipsum dolor sit…</p>
+				<div><img class="image" src="images/blog-img-7.jpg" style="margin: 0 20px;"></div>
+				<div style="margin: 0 20px;">
+					<h1>Deconstructing The #OOTD Pose</h1><br>
+					<h3>October 16, 2018 January 6, 2024.by NayyarShaikh. No comments yet</h3><br>
+					<p>Donec accumsan auctor iaculis. Sed suscipit arcu ligula, at egestas magna molestie a. Proin ac ex
+						maximus, ultrices justo eget, sodales orci. Aliquam egestas libero ac turpis pharetra, in
+						vehicula lacus scelerisque. Vestibulum ut sem laoreet. Lorem ipsum dolor sit…</p>
+				</div>
 			</div>
 			<div class="bcl-card">
-				<img src="images/blog-img-6.jpg" alt="" style="height: 180px;float: left;margin: 0 20px;">
-				<h1>5 Best Summer Dresses</h1><br>
-				<h3>October 16, 2018 January 6, 2024.by NayyarShaikh. No comments yet</h3><br>
-				<p>Donec accumsan auctor iaculis. Sed suscipit arcu ligula, at egestas magna molestie a. Proin ac ex maximus, ultrices justo eget, sodales orci. Aliquam egestas libero ac turpis pharetra, in vehicula lacus scelerisque. Vestibulum ut sem laoreet. Lorem ipsum dolor sit</p>
+				<div><img class="image" src="images/blog-img-6.jpg" alt="" style="margin: 0 20px;"></div>
+				<div style="margin: 0 20px;">
+					<h1>5 Best Summer Dresses</h1><br>
+					<h3>October 16, 2018 January 6, 2024.by NayyarShaikh. No comments yet</h3><br>
+					<p>Donec accumsan auctor iaculis. Sed suscipit arcu ligula, at egestas magna molestie a. Proin ac ex
+						maximus, ultrices justo eget, sodales orci. Aliquam egestas libero ac turpis pharetra, in
+						vehicula lacus scelerisque. Vestibulum ut sem laoreet. Lorem ipsum dolor sit</p>
+				</div>
 			</div>
 			<div class="bcl-card">
-				<img src="images/blog-img-3.jpg" alt="" style="width: 268px; height: 190px;float: left;margin: 0 20px;">
-				<h1>Baby Boy Capsule Lookbook Has Just Arrived To Miini</h1><br>
-				<h3>October 16, 2018 January 6, 2024.by NayyarShaikh. No comments yet</h3><br>
-				<p>Donec accumsan auctor iaculis. Sed suscipit arcu ligula, at egestas magna molestie a. Proin ac ex maximus, ultrices justo eget, sodales orci. Aliquam egestas libero ac turpis pharetra, in vehicula lacus scelerisque. Vestibulum ut sem laoreet. Lorem ipsum dolor sit</p>
+				<div><img class="image" src="images/blog-img-6.jpg" alt="" style="margin: 0 20px;">
+				</div>
+				<div style="margin: 0 20px;">
+					<h1>Baby Boy Capsule Lookbook Has Just Arrived To Miini</h1><br>
+					<h3>October 16, 2018 January 6, 2024.by NayyarShaikh. No comments yet</h3><br>
+					<p>Donec accumsan auctor iaculis. Sed suscipit arcu ligula, at egestas magna molestie a. Proin ac ex
+						maximus, ultrices justo eget, sodales orci. Aliquam egestas libero ac turpis pharetra, in
+						vehicula lacus scelerisque. Vestibulum ut sem laoreet. Lorem ipsum dolor sit</p>
+				</div>
 			</div>
 		</div>
 		<div class="bc-right">
@@ -90,7 +108,7 @@
 				<li>woostify on Black Coat</li>
 				<li>woostify on Buck Butte Insulated Hooded Jacket</li>
 			</ul>
-		</div>	
+		</div>
 	</section>
 	<section class="footer">
 		<div class="f-top">
@@ -129,14 +147,80 @@
 		<div style="text-align: center;">© 2021 Woostify Privacy Policy All rights reserved. Designed & developed by
 			woostify</div>
 	</section>
+	<section class="signIn">
+		<div class="signInBlock">
+			<i class="fa-solid fa-xmark fa-lg" style="position: absolute;top: 25px;right: 20px; cursor: pointer;"
+				onclick="hideSignIn()"></i>
+			<h1>Welcome back!</h1>
+			<p>Sign to your account.</p>
+
+			<input type="email" placeholder="  Email">
+			<input type="password" placeholder="  Password">
+			<div class="signInFlex">
+				<div style="display: flex;align-content: center;gap: 5px;">
+					<input type="checkbox" id="remember" name="remember" />
+					<label for="remember">Remember Me</label>
+				</div>
+				<button>SIGN IN</button>
+			</div>
+			<p>OR</p>
+			<div class="loginOptions">
+				<div><i class="fa-brands fa-facebook fa-lg" style="color: #ffffff;"></i></div>
+				<div><i class="fa-brands fa-twitter fa-lg" style="color: #ffffff;"></i></div>
+				<div><i class="fa-brands fa-google fa-lg" style="color: #ffffff;"></i></div>
+			</div>
+			<p>Don't have a account? <span onclick="handleSignUp();hideSignIn();"> <a>SIGN UP</a></span></p>
+		</div>
+	</section>
+	<section class="signUp">
+		<div class="signUpBlock">
+			<i class="fa-solid fa-xmark fa-lg" style="position: absolute;top: 25px;right: 20px; cursor: pointer;"
+				onclick="hideSignUp()"></i>
+			<h1>Sign Up</h1>
+
+			<input type="email" placeholder="  Email">
+			<input type="password" placeholder="  Password">
+			<input type="password" placeholder="  Repeat Password">
+			<div class="signUpFlex">
+				<div style="display: flex;gap: 5px;">
+					<input type="checkbox" id="terms" name="terms" />
+					<label for="terms">I agree with <b>Terms & Conditions</b> </label>
+				</div>
+				<button>SIGN UP</button>
+			</div>
+			<p>OR</p>
+			<div class="loginOptions">
+				<div><i class="fa-brands fa-facebook fa-lg" style="color: #ffffff;"></i></div>
+				<div><i class="fa-brands fa-twitter fa-lg" style="color: #ffffff;"></i></div>
+				<div><i class="fa-brands fa-google fa-lg" style="color: #ffffff;"></i></div>
+			</div>
+		</div>
+	</section>
 	<script>
 		var burger = document.querySelector(".hamburger")
-		function hidemenu(){
-			burger.style.left = "-700px" 
+		function hidemenu() {
+			burger.style.left = "-700px"
 		}
-		function showmenu(){
+		function showmenu() {
 			burger.style.left = "0px"
+		}
+
+		var signIn = document.querySelector(".signIn")
+		function handleSignIn() {
+			signIn.style.display = "block"
+		}
+		function hideSignIn() {
+			signIn.style.display = "none"
+		}
+
+		var signUp = document.querySelector(".signUp")
+		function handleSignUp() {
+			signUp.style.display = "block"
+		}
+		function hideSignUp() {
+			signUp.style.display = "none"
 		}
 	</script>
 </body>
+
 </html>

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,9 +10,9 @@
 		crossorigin="anonymous" referrerpolicy="no-referrer" />
 	<title>Document</title>
 </head>
+
 <body>
 	<section class="nav">
-		
 		<div class="hamburger">
 			<i class="fa-solid fa-xmark" onclick="hidemenu()"></i>
 			<input type="text" placeholder="Search products...">
@@ -21,23 +22,27 @@
 				<li><a href="track-order.html">TRACK ORDER</a></li>
 				<li><a href="blog.html">BLOG</a></li>
 				<li><a href="contact.html">CONTACT</a></li>
-				<li>Login / Register</li>
+				<li><a onclick="handleSignIn();hidemenu()">LOGIN</a></li>
+				<li><a onclick="handleSignUp();hidemenu()">REGISTER</a></li>
 			</ul>
-			
+
 		</div>
 		<div class="logo"><a href="index.html">EVENTBRITE</a></div>
 		<div class="nav-btn">
 			<div class="nav-pg">
 				<ul>
 					<li><a href="index.html">HOME</a></li>
-					<li class="dd"><a href="shop.html" >SHOP</a><i class="fa-solid fa-angle-down" style="color: #ffffff;"></i><div class="sub-nav">
-						<ul>
-							<li>My account</li>
-							<li>CheckOut</li>
-							<li>Cart</li>
-						</ul>
-					</div></li>
-					
+					<li class="dd">
+						<a href="shop.html">SHOP</a>
+						<i class="fa-solid fa-angle-down" style="color: #ffffff;"></i>
+						<div class="sub-nav">
+							<ul>
+								<li><a onclick="handleSignIn()" id="signIn">My account</a></li>
+								<li>CheckOut</li>
+								<li>Cart</li>
+							</ul>
+						</div>
+					</li>
 					<li><a href="track-order.html">TRACK ORDER</a></li>
 					<li><a href="blog.html">BLOG</a></li>
 					<li><a href="contact.html">CONTACT</a></li>
@@ -61,8 +66,8 @@
 					<i class="fa-solid fa-phone"></i>
 				</div>
 				<div class="clc-text">
-					Phone Number
-					<h4>+1 342 5860 282</h4>
+					<h3>Phone Number</h3>
+					<p>+1 342 5860 282</p>
 				</div>
 			</div>
 			<div class="cl-card">
@@ -70,8 +75,8 @@
 					<i class="fa-solid fa-location-dot"></i>
 				</div>
 				<div class="clc-text">
-					Address
-					<h4>168 Park Avenue</h4>
+					<h3>Address</h3>
+					<p>168 Park Avenue</p>
 				</div>
 			</div>
 			<div class="cl-card">
@@ -79,8 +84,8 @@
 					<i class="fa-solid fa-envelope"></i>
 				</div>
 				<div class="clc-text">
-					EMAIL
-					<h4>hello@woostify.com</h4>
+					<h3>EMAIL</h3>
+					<p>hello@woostify.com</p>
 				</div>
 			</div>
 		</div>
@@ -92,7 +97,7 @@
 				<input type="text" name="" id="" placeholder="Email">
 			</div>
 			<div class="crb-input">
-				<input type="text" placeholder="Message">
+				<textarea placeholder="Message"></textarea>
 			</div>
 			<button>SEND US</button>
 		</div>
@@ -134,14 +139,80 @@
 		<div style="text-align: center;">© 2021 Woostify Privacy Policy All rights reserved. Designed & developed by
 			woostify</div>
 	</section>
+	<section class="signIn">
+		<div class="signInBlock">
+			<i class="fa-solid fa-xmark fa-lg" style="position: absolute;top: 25px;right: 20px; cursor: pointer;"
+				onclick="hideSignIn()"></i>
+			<h1>Welcome back!</h1>
+			<p>Sign to your account.</p>
+
+			<input type="email" placeholder="  Email">
+			<input type="password" placeholder="  Password">
+			<div class="signInFlex">
+				<div style="display: flex;align-content: center;gap: 5px;">
+					<input type="checkbox" id="remember" name="remember" />
+					<label for="remember">Remember Me</label>
+				</div>
+				<button>SIGN IN</button>
+			</div>
+			<p>OR</p>
+			<div class="loginOptions">
+				<div><i class="fa-brands fa-facebook fa-lg" style="color: #ffffff;"></i></div>
+				<div><i class="fa-brands fa-twitter fa-lg" style="color: #ffffff;"></i></div>
+				<div><i class="fa-brands fa-google fa-lg" style="color: #ffffff;"></i></div>
+			</div>
+			<p>Don't have a account? <span onclick="handleSignUp();hideSignIn();"> <a>SIGN UP</a></span></p>
+		</div>
+	</section>
+	<section class="signUp">
+		<div class="signUpBlock">
+			<i class="fa-solid fa-xmark fa-lg" style="position: absolute;top: 25px;right: 20px; cursor: pointer;"
+				onclick="hideSignUp()"></i>
+			<h1>Sign Up</h1>
+
+			<input type="email" placeholder="  Email">
+			<input type="password" placeholder="  Password">
+			<input type="password" placeholder="  Repeat Password">
+			<div class="signUpFlex">
+				<div style="display: flex;gap: 5px;">
+					<input type="checkbox" id="terms" name="terms" />
+					<label for="terms">I agree with <b>Terms & Conditions</b> </label>
+				</div>
+				<button>SIGN UP</button>
+			</div>
+			<p>OR</p>
+			<div class="loginOptions">
+				<div><i class="fa-brands fa-facebook fa-lg" style="color: #ffffff;"></i></div>
+				<div><i class="fa-brands fa-twitter fa-lg" style="color: #ffffff;"></i></div>
+				<div><i class="fa-brands fa-google fa-lg" style="color: #ffffff;"></i></div>
+			</div>
+		</div>
+	</section>
 	<script>
 		var burger = document.querySelector(".hamburger")
-		function hidemenu(){
-			burger.style.left = "-700px" 
+		function hidemenu() {
+			burger.style.left = "-700px"
 		}
-		function showmenu(){
+		function showmenu() {
 			burger.style.left = "0px"
+		}
+
+		var signIn = document.querySelector(".signIn")
+		function handleSignIn() {
+			signIn.style.display = "block"
+		}
+		function hideSignIn() {
+			signIn.style.display = "none"
+		}
+
+		var signUp = document.querySelector(".signUp")
+		function handleSignUp() {
+			signUp.style.display = "block"
+		}
+		function hideSignUp() {
+			signUp.style.display = "none"
 		}
 	</script>
 </body>
+
 </html>

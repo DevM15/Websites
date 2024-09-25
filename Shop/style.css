@@ -1,22 +1,28 @@
 * {
 	margin: 0;
 	padding: 0;
-	font-family: sans-serif;
+	font-family: comic Sans ms,;
 }
 
 .nav {
 	max-height: 65px;
 	padding: 20px 3%;
-	display: flex;
+	/* display: flex; */
 	align-items: center;
 	justify-content: space-between;
 	background-color: #1b1a41;
+	position: relative;
+	text-align: center;
 }
 
 .nav>i{
 	display: none;
 	color: white;
 	font-size: 20px;
+	position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    right: 10px;
 }
 
 .hamburger{
@@ -34,7 +40,7 @@
 .hamburger ul li{
 	list-style: none;
 	margin: 20px 0;
-	font-size: 30px;
+	font-size: 20px;
 }
 
 .hamburger ul li a{
@@ -80,7 +86,7 @@
 	width: max-content
 }
 
-.nav-pg ul li a {
+.nav-pg ul li a{
 	color: white;
 	text-decoration: none;
 }
@@ -116,6 +122,10 @@
 .sub-nav ul{
 	display: flex;
 	flex-direction: column;
+}
+
+.sub-nav ul li a{
+	color: black;
 }
 
 
@@ -195,6 +205,7 @@
 	font-weight: bold;
 	cursor: pointer;
 	border:none;
+	transition: ease-out 0.5s;
 }
 
 .h-row2 {
@@ -203,7 +214,7 @@
 	justify-content: center;
 	display: grid;
 	grid-template-columns: repeat(auto-fit,minmax(150px,1fr));
-	gap: 20px;
+	gap: 15px;
 }
 
 .hr2-card {
@@ -211,14 +222,19 @@
 	color: #7c818b;
 }
 
+.hr2-card div{
+	font-size: 13px;
+}
+
 .hr2-card i {
 	font-size: 30px;
-	margin: auto 20px;
-
+	margin: 5px 20px;
+    flex-basis: 45px;
 }
 
 .hr2-card h4 {
-	margin-bottom: 15px;
+	font-size: 16px;
+	margin-bottom: 5px;
 	color: #2b2b2b;
 }
 
@@ -235,7 +251,7 @@
 	margin: 10px 0;
 }
 
-.h-row3 :hover{
+.hr3-card:hover{
 	transform: scale(1.1);
 }
 
@@ -246,6 +262,7 @@
 
 .hr3-card img {
 	width: 100px;
+	height: 100px;
 	float: right;
 }
 
@@ -373,12 +390,12 @@
 .f-top {
 	display: flex;
 	flex-wrap:wrap;
-	/* gap: 30px; */
+	gap: 10px;
 	margin: 5% 0 10% 0;
 }
 
 .f-top div {
-	flex-basis: 25%;
+	flex-basis: 24%;
 	margin-top: 15px;
 }
 
@@ -607,7 +624,8 @@
 
 .bcl-card{
 	height: max-content;
-	margin-bottom: 100px ;
+	margin-bottom: 50px ;
+	display: flex;
 }
 
 .c-cta{
@@ -630,7 +648,7 @@
 }
 
 .clc-icon{
-	font-size: 30px;
+	font-size: 20px;
 	margin: 20px;
 	width: 40px;
 	text-align: center;
@@ -662,14 +680,160 @@
 	border-radius: 25px;
 }
 
-.crb-input>input{
+.crb-input>textarea{
 	margin: 10px 0;
-	height: 100px;
 	width: 93%;
 	padding: 10px;
 }
 
+.login {
+	display: flex;
+	margin: 10%;
+	align-items: center;
+}
+
+.l-left h1{
+	font-size: 70px;
+	color: #fa6e49;
+}
+
+.l-left p{
+	font-size: 20px;
+}
+
+.l-right{
+	border: 1px solid gray;
+	padding: 20px;
+	border-radius: 10px;
+	text-align: center;
+}
+
+.signIn{
+	display: none;
+	position: fixed;
+	top: 0px;
+	width: 100vw;
+	height: 100vh;
+	background-color: hsla(0, 0%, 100%, 60%);
+}
+
+.signIn a{
+	color: #fa6e49;
+	text-decoration: none;
+	cursor: pointer;
+}
+
+.signInBlock{
+	padding: 50px;
+	border-radius: 5px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	background-color: white;
+	filter: drop-shadow(0 0 0.3rem rgb(40, 40, 40));
+	text-align: center;
+}
+
+.signInBlock h1{
+	font-size: 30px;
+}
+
+.signInBlock>input{
+	width: 100%;
+	margin: 6px 0px;
+	padding: 5px 0;
+}
+
+.signInFlex{
+	display: flex;
+	align-items: baseline;
+	justify-content: space-between; 
+	margin: 10px 0;
+}
+
+.signInFlex button{
+	cursor: pointer;
+	color: white;
+	background-color: #fa6e49;
+	border: none;
+	border-radius: 5px;
+	padding: 10px 15px;
+}
+
+.loginOptions{
+	display: flex;
+	gap: 10px;
+    justify-content: center;
+	margin-bottom: 15px;
+}
+
+.loginOptions div{
+	padding: 10px;
+	background-color: #fa6e49;
+	border-radius: 50px;
+	cursor: pointer;
+}
+
+.signUp{
+	display: none;
+	position: fixed;
+	top: 0px;
+	width: 100vw;
+	height: 100vh;
+	background-color: hsla(0, 0%, 100%, 60%);
+}
+
+.signUpBlock{
+	padding: 50px;
+	border-radius: 5px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	background-color: white;
+	filter: drop-shadow(0 0 0.3rem rgb(40, 40, 40));
+	text-align: center;
+}
+
+.signUpBlock p{
+	margin-bottom: 30px;
+	color: grey;
+}
+
+.signUpBlock h1{
+	margin-bottom: 30px;
+}
+
+.signUpBlock>input{
+	width: 100%;
+	margin: 5px 0px;
+	height: 24px;
+}
+
+.signUpFlex{
+	display: flex;
+	align-items: center;
+	justify-content: space-between; 
+	margin: 10px 0;
+	gap: 5px;
+}
+
+.signUpFlex button{
+	cursor: pointer;
+	color: white;
+	background-color: #fa6e49;
+	border: none;
+	border-radius: 5px;
+	padding: 10px 15px;
+}
+
+
+
 @media (min-width: 600px) and (max-width: 991px) {
+	.f-top{
+		gap: 30px;
+	}
 	.f-top div {
 		flex-basis: 45%;
 	}
@@ -702,6 +866,13 @@
 	.b-center{
 		width: 90%;
 	}
+	.c-left{
+		width: 100%;
+	}
+	.c-right{
+		width: 100%;
+	}
+
 }
 
 @media (min-width: 600px) and (max-width: 767px) {
@@ -728,6 +899,11 @@
 	}
 	.b-center{
 		flex-direction: column;
+	}
+	.login{
+		text-align: center;
+		flex-direction: column;
+    	gap: 40px
 	}
 }
 
@@ -763,9 +939,10 @@
 	}
 	.f-top{
 		flex-direction: column;
+		gap: 30px;
 	}
 	.hr1-col2 h1{
-		font-size: 30px;
+		font-size: 28px;
 	}
 	.hr1-col2 button{
 		padding: 5px 10px;
@@ -795,7 +972,84 @@
 		width: 90%;
 		flex-direction: column;
 	}
-	.bcl-card>img{
-		float: none;
+	.bcl-card{
+		flex-direction: column;
+	}
+	.c-left{
+		width: 100%;
+	}
+	.c-right{
+		width: 100%;
+	}
+	.c-right h1{
+		text-align: center;
+	}
+	.login{
+		text-align: center;
+		flex-direction: column;
+    	gap: 40px
+	}
+	.l-left h1{
+		font-size: 30px;
+	}
+	.l-left p{
+		font-size: 15px;
+	}
+	.c-left>h1{
+		text-align: center;
+	}
+	.crt-input>input {
+		margin-bottom: 10px;
+	}
+	.signInBlock h1{
+		font-size: 24px;
+	}
+	.signInFlex{
+		flex-direction: column;
+		align-items: flex-start;
+        gap: 10px;
+	}
+	.signInFlex button{
+		width: 100%;
+	}
+	.signInBlock p{
+		font-size: 14px;
+	}
+	.signInBlock{
+		width: 60vw;
+	}
+	.signUpBlock{
+		width: 60vw;
+	}
+	.signUpFlex{
+		flex-direction: column;
+		align-items: flex-start;
+		gap: 10px;
+	}
+	label{
+		font-size: 11px;
+	}
+	.signUpFlex button{
+		width: 100%;
+	}
+	.footer{
+		padding: 1.5% 12%;
+	}
+	.image{
+		width: 100%;
+		height: auto;
+		margin: 0;
+	}
+}
+
+@media (min-width: 991px) {
+	.nav {
+		display: flex;
+	}
+}
+
+@media (min-width: 600px) {
+	.image{
+		height: 180px;
 	}
 }
