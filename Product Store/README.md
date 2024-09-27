@@ -1,6 +1,6 @@
 <h1 align="center">MERN Project 🚀</h1>
 
-![Demo App](/Frontend/public/screenshot-for-readme.png)
+![Demo App](./Frontend/public/screenshot-for-readme.png)
 
 ### Setup .env file
 
