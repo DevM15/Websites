@@ -1,7 +1,7 @@
 <h1 align="center">Django Project</h1>
 <br>
 
-![Demo App](./Blog/static/Demo.png)
+![Demo App](/Blog/static/Demo.png)
 
 ### Run this app locally
 
