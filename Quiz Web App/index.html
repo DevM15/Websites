@@ -10,7 +10,7 @@
 </head>
 
 <body>
-    <div class="start_btn"><button>Start Quiz</button></div>
+    <div class="start_btn"><button onclick="change('start_btn','info_box')">Start Quiz</button></div>
     <div class="info_box">
         <div class="info_title"><span>Some Rules of this Quiz</span></div>
         <div class="info_list">
@@ -21,8 +21,8 @@
             <div class="info"></div>
         </div>
         <div class="buttons">
-            <button class="quit">Exit Quiz</button>
-            <button class="restart">Continue</button>
+            <button class="quit" onclick="change('info_box','start_btn')">Exit Quiz</button>
+            <button class="restart" onclick="change('info_box','quiz_box'),timer()">Continue</button>
         </div>
     </div>
     <div class="quiz_box">
@@ -58,11 +58,23 @@
         <footer>
             <div class="total_que">
                 <span>
-                    <p>2</p>Of<p>5</p>Question
+                    <p>1</p>Of<p>5</p>Question
                 </span>
             </div>
-            <button class="next_btn">Next Que</button>
+            <button class="next_btn" onclick="nextQue()">Next Que</button>
         </footer>
+
+    </div>
+    <div class="result_box">
+        <div class="icon"><i class="fas fa-crown"></i></div>
+        <div class="complete_text">You've completed the Quiz!</div>
+        <div class="score_text">
+            <span>and sorry, Correct <p>2</p> out of <p>5</p></span>
+        </div>
+        <div class="buttons">
+            <button class="restart">Replay Quiz</button>
+            <button class="quit" onclick="change('result_box','start_btn')">Quit Quiz</button>
+        </div>
     </div>
 
     <script src="script.js"></script>
