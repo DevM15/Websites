@@ -35,8 +35,11 @@ body{
     width: 540px;
     background: #fff;
     border-radius: 5px;
-    display: none;
     transform: translate(-50%, -50%) scale(0.9);
+    opacity: 0;
+    pointer-events: none;
+    
+    transition: all 0.3s ease;
 }
 .info_box .info_title{
     height: 60px;
@@ -100,8 +103,10 @@ body{
     width: 550px;
     background: #fff;
     border-radius: 5px;
-    display: none;
     transform: translate(-50%, -50) scale(0.9);
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.3s ease;
 }
 .quiz_box header{
     position: relative;
@@ -238,6 +243,8 @@ footer .next_btn:hover{
     background: #0263ca;
 }
 .result_box{
+    opacity: 0;
+    pointer-events: none;
     background: #fff;
     width: 450px;
     padding: 25px 30px;
@@ -299,4 +306,9 @@ footer .next_btn:hover{
     color: #fff;
     background: #007bff;
 }
-
+.option .correct{
+    background: #23903c;
+}
+.option .correct{
+    background: #a42834;
+}

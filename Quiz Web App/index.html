@@ -22,7 +22,7 @@
         </div>
         <div class="buttons">
             <button class="quit" onclick="change('info_box','start_btn')">Exit Quiz</button>
-            <button class="restart" onclick="change('info_box','quiz_box'),timer()">Continue</button>
+            <button class="restart" onclick="change('info_box','quiz_box'),timer(),nextQue()">Continue</button>
         </div>
     </div>
     <div class="quiz_box">
@@ -38,18 +38,18 @@
                 <span>What does HTML stand for?</span>
             </div>
             <div class="option_list">
-                <div class="option">
+                <div class="option" key={1} onclick="choose(key)">
                     <span>Hyper Text Preprocessor</span>
                     <div class="icon tick"><i class="fas fa-check"></i></div>
                 </div>
-                <div class="option">
+                <div class="option" key={2} onclick="choose(key)">
                     <span>Hyper Text Markup Language</span>
                     <div class="icon cross"><i class="fas fa-times"></i></div>
                 </div>
-                <div class="option">
+                <div class="option" key={3} onclick="choose(key)">
                     <span>Hyper Text Multiple Language</span>
                 </div>
-                <div class="option">
+                <div class="option" key={4} onclick="choose(key)">
                     <span>Hyper Text Multi Language</span>
                 </div>
             </div>
@@ -72,7 +72,7 @@
             <span>and sorry, Correct <p>2</p> out of <p>5</p></span>
         </div>
         <div class="buttons">
-            <button class="restart">Replay Quiz</button>
+            <button class="restart" onclick="change('result_box','quiz_box'),nextQue()">Replay Quiz</button>
             <button class="quit" onclick="change('result_box','start_btn')">Quit Quiz</button>
         </div>
     </div>
