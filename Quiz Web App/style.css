@@ -196,6 +196,9 @@ section .option_list .option:hover{
     line-height: 24px;
     pointer-events: none;
 }
+.option_list .option span{
+    pointer-events: none;
+}
 .option_list .option .icon.tick{
     color: #23903c;
     border-color: #23903c;
@@ -305,10 +308,4 @@ footer .next_btn:hover{
 .buttons button.quit:hover{
     color: #fff;
     background: #007bff;
-}
-.option .correct{
-    background: #23903c;
-}
-.option .correct{
-    background: #a42834;
 }

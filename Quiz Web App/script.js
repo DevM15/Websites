@@ -2,10 +2,15 @@ const startBtn = document.querySelector(".start_btn");
 const infoBox = document.querySelector(".info_box");
 const quizBox = document.querySelector(".que_text");
 const result_box = document.querySelector(".result_box");
-const option = document.querySelectorAll(".option_list .option");
+const options = document.querySelectorAll(".option_list .option");
 const timerText = document.querySelector(".timer_sec");
+const tickIcon = "<div class='icon tick'><i class='fas fa-check'></i></div>"
+const crossIcon = '<div class="icon cross"><i class="fas fa-times"></i></div>'
+
 var duration = 0;
 let queNum = 0;
+let correct = 0;
+
 const Que = [  [   '1. What does HTML stand for?',
                     'Hyper Text Preprocessor',
                     'Hyper Text Markup Language',
@@ -56,6 +61,7 @@ function timer() {
         if(duration==15){
             clearInterval(interval);
             setTimeout(nextQue, 5000);
+            answer(Que[queNum-1][])
         }
         duration += 1;
         timerText.innerHTML = 16 - duration;
@@ -71,18 +77,37 @@ function nextQue() {
         return;
     }
     document.querySelector(".total_que span p:first-child").innerHTML = queNum;
+    options.forEach((option,key) => {
+        option.querySelector("span").innerHTML = Que[queNum-1][key+1]
+    })
     quizBox.innerHTML = Que[queNum - 1][0];
     clearInterval(interval);
     duration = 0;
     timer();
 };
 
-function choose(e) {
-    console.log(e)
-    // if(Que[e] == Que[5]) {
-    //     // append class correct
-    // }
-    // else {
-    //     // append class  cross
-    // }
+function answer(e) {
+    if(Que[queNum-1][e.target.id] === Que[queNum-1][5]) {
+        e.target.style.background = "#b4ecc2"
+        e.target.innerHTML += tickIcon;
+        correct += 1;
+        options.forEach(option => {
+            option.removeEventListener("click", answer)
+        })
+    }
+    else {
+        e.target.style.background = "#f8d7da";
+        e.target.innerHTML += crossIcon;
+        options.forEach(option => {
+            option.removeEventListener("click", answer)
+            if(option.querySelector("span").innerHTML == Que[queNum-1][5]) {
+                option.style.background = "#b4ecc2";
+                option.innerHTML += tickIcon;
+            }
+        })
+    }
 };
+
+options.forEach(option => {
+    option.addEventListener("click", answer);
+})
