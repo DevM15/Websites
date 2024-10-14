@@ -10,7 +10,7 @@
 </head>
 
 <body>
-    <div class="start_btn"><button onclick="change('start_btn','info_box')">Start Quiz</button></div>
+    <div class="start_btn"><button onclick="change('start_btn','info_box'),timer()">Start Quiz</button></div>
     <div class="info_box">
         <div class="info_title"><span>Some Rules of this Quiz</span></div>
         <div class="info_list">
@@ -22,7 +22,7 @@
         </div>
         <div class="buttons">
             <button class="quit" onclick="change('info_box','start_btn')">Exit Quiz</button>
-            <button class="restart" onclick="change('info_box','quiz_box'),timer(),nextQue()">Continue</button>
+            <button class="restart" onclick="change('info_box','quiz_box'),nextQue()">Continue</button>
         </div>
     </div>
     <div class="quiz_box">
